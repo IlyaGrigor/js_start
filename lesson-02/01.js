@@ -21,10 +21,8 @@ if ((isAdmin === true ||
         hasTemporaryPass === true)) {
     isAccess = true
     console.log(isAccess)
-    // alert(isAccess)
 } else {
     isAccess = false
-    // alert(isAccess)
     console.log(isAccess)
 }
 
