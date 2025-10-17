@@ -7,9 +7,28 @@
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
 
-let dice1 // your code
-let dice2 // your code
-let isWinningDouble // your code
+let dice1 = Math.floor(Math.random() * 6) + 1;
+
+let dice2 = Math.floor(Math.random() * 6) + 1;
+
+let isWinningDouble;
+
+
+// if ((dice1 === dice2) && ((dice1 + dice2) > 6)) {
+if ((dice1 === dice2) && (dice1 > 3 && dice2 > 3)) {
+    isWinningDouble = true;
+    console.log(isWinningDouble + " Winning Double!")
+} else if ((dice1 === dice2) && (dice1 < 3 && dice2 < 3)) {
+    isWinningDouble = false;
+    console.log(isWinningDouble + " Loosing Double :(")
+} else {
+    isWinningDouble = false;
+    console.log(isWinningDouble + " You Loose:(")
+}
+
+console.log("random dice 1: ", dice1);
+console.log("random dice 2: ", dice2);
+
 
 /*
 console.log('Первый бросок: ' + dice1)
