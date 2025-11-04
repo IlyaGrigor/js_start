@@ -15,10 +15,14 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 
 
 const superArray = [1,3,6,45,7,9];
-const checkElement = 6;
+const checkElement = 2;
 
 function includesElement(array, element) {
-    return array.indexOf(element) !== -1;
+    // return array.includes(element);
+    // return array.indexOf(element) !== -1;
+    for (let i = 0; i < array.length; i++) {
+        return array.indexOf(element) !== -1;
+    }
 }
 
 const elementCheck = includesElement(superArray, checkElement);
