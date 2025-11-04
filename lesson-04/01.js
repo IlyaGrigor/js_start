@@ -13,4 +13,14 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-function includesElement() {}
+
+const superArray = [1,3,6,45,7,9];
+const checkElement = 6;
+
+function includesElement(array, element) {
+    return array.indexOf(element) !== -1;
+}
+
+const elementCheck = includesElement(superArray, checkElement);
+console.log(elementCheck);
+
