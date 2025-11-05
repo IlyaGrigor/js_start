@@ -18,10 +18,10 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 */
 
 const superArray02 = [1, 2, 3, 4, 5, 6];
-const superArray03 = [11, 9, 1, 10, 66];
+const superArray03 = [11, 4, 1, 10, 66];
 
 const superArray04 = [1, 2, 3, 4, 5, 6];
-const superArray05 = [4, 8, 9, 10, 11, 12, 13]
+const superArray05 = [4, 8, 9, 10, 11, 12, 6]
 
 const superArray06 = [33, 44, 55];
 const superArray07 = [66, 77, 88];
@@ -41,7 +41,7 @@ function includesElement(array, element) {
 
 function findCommonElements(array1, array2) {
     const newArray = [];
-    for (let i = 0; i < array1.length; i++) {
+    for (let i = 0; i < Math.max(array1.length, array2.length); i++) {
         if (includesElement(array1, array2[i]) === true) {
             newArray.push(array2[i]);
         }
