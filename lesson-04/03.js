@@ -52,8 +52,8 @@ function findCommonElements(array1, array2) {
 const elementsFounded = findCommonElements(superArray02, superArray03);
 console.log(elementsFounded)
 
-const elements2Founded = findCommonElements(superArray04, superArray05);
-console.log(elements2Founded)
-
-const elements3Founded = findCommonElements(superArray06, superArray07);
-console.log(elements3Founded)
+// const elements2Founded = findCommonElements(superArray04, superArray05);
+// console.log(elements2Founded)
+//
+// const elements3Founded = findCommonElements(superArray06, superArray07);
+// console.log(elements3Founded)
