@@ -27,16 +27,16 @@ const superArray06 = [33, 44, 55];
 const superArray07 = [66, 77, 88];
 
 
-// function includesElement(array, element) {
-//     // return array.includes(element);
-//     let result;
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i] === element) {
-//             return result = true;
-//         }
-//     }
-//     return result = false;
-// }
+function includesElement(array, element) {
+    // return array.includes(element);
+    let result;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === element) {
+            return result = true;
+        }
+    }
+    return result = false;
+}
 
 
 function findCommonElements(array1, array2) {
