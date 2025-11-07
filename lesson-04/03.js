@@ -49,18 +49,14 @@ function findCommonElements(array1, array2) {
         }
     } else if (array1.length < array2.length) {
         for (let i = 0; i < array2.length; i++) {
-            for (let i = 0; i < array1.length; i++) {
-                if (includesElement(array2, array1[i]) === true) {
-                    newArray.push(array1[i]);
-                }
+            if (includesElement(array2, array1[i]) === true) {
+                newArray.push(array1[i]);
             }
         }
     } else {
         for (let i = 0; i < array2.length; i++) {
-            for (let i = 0; i < array1.length; i++) {
-                if (includesElement(array2, array1[i]) === true) {
-                    newArray.push(array1[i]);
-                }
+            if (includesElement(array2, array1[i]) === true) {
+                newArray.push(array1[i]);
             }
         }
 
@@ -69,11 +65,11 @@ function findCommonElements(array1, array2) {
     return newArray;
 }
 
-    // const elementsFounded = findCommonElements(superArray02, superArray03);
-    // console.log(elementsFounded);
-    //
-    // const elements2Founded = findCommonElements(superArray04, superArray05);
-    // console.log(elements2Founded)
-    //
-    // const elements3Founded = findCommonElements(superArray06, superArray07);
-    // console.log(elements3Founded)
+// const elementsFounded = findCommonElements(superArray02, superArray03);
+// console.log(elementsFounded);
+//
+// const elements2Founded = findCommonElements(superArray04, superArray05);
+// console.log(elements2Founded)
+//
+// const elements3Founded = findCommonElements(superArray06, superArray07);
+// console.log(elements3Founded)
