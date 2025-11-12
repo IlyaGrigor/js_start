@@ -35,4 +35,17 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(galleryObject, artworkTitle, newValue) {
+    if (galleryObject.hasOwnProperty(artworkTitle)) {
+        galleryObject[artworkTitle] = newValue;
+    } else {
+        galleryObject[artworkTitle] = newValue;
+    }
+    return galleryObject;
+}
+
+const results = updateGallery(gallery, "Starry Night", "Vincent van Gogh (his prime time)");
+console.log(results);
+
+const secondResult = updateGallery(gallery, "Banksy The Writer", "Some Banksy peace");
+console.log(secondResult);
