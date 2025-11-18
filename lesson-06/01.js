@@ -23,4 +23,22 @@ const oddNumbers = filter(numbers, (element, index) => {
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
-const filter = () => {}
+const groceriesList = ["beans", "pork", "wholegrain bread", "milk", "eggs"];
+
+const filter = (array, callback) => {
+    const shoppingList = [];
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i])) {
+            shoppingList.push(array[i]);
+        }
+    }
+    return shoppingList;
+}
+
+const callbackHowManyLetters = (element, index) => {
+   return element.length > 4
+}
+
+
+const result = filter(groceriesList, callbackHowManyLetters);
+console.log(result);
