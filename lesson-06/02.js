@@ -26,14 +26,16 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 const numbers = [1, 2, 3, 4, 5]
 
 const map = (array, callback) => {
-    return array.map (callback)
+    return array.map (callback);
 }
 
 const callbackDouble = (element, index) => {
     if (index % 2 === 0) {
         return element * 2;
+    } else {
+        return element;
     }
 }
 
-let result = mapFunc(numbers, callbackDouble);
+let result = map(numbers, callbackDouble);
 console.log(result);
