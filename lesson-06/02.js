@@ -25,7 +25,7 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 const numbers = [1, 2, 3, 4, 5]
 
-const mapFunc = (array, callback) => {
+const map = (array, callback) => {
     return array.map (callback)
 }
 
