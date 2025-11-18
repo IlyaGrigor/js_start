@@ -30,8 +30,9 @@ const mapFunc = (array, callback) => {
 }
 
 const callbackDouble = (element, index) => {
-    console.log(`Число ${element} под порядковым номером ${index} умножаем на 2 и получаем ${element * 2}`);
-    return element * 2;
+    if (index % 2 === 0) {
+        return element * 2;
+    }
 }
 
 let result = mapFunc(numbers, callbackDouble);
