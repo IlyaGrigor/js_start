@@ -28,7 +28,7 @@ const groceriesList = ["beans", "pork", "wholegrain bread", "milk", "eggs"];
 const filter = (array, callback) => {
     const shoppingList = [];
     for (let i = 0; i < array.length; i++) {
-        if (callback(array[i])) {
+        if (callback(array[i], i)) {
             shoppingList.push(array[i]);
         }
     }
@@ -36,7 +36,7 @@ const filter = (array, callback) => {
 }
 
 const callbackHowManyLetters = (element, index) => {
-   return element.length > 4
+   return index >=2 && element.length > 4;
 }
 
 
