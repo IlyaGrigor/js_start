@@ -25,20 +25,27 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 
 const groceriesList = ["beans", "pork", "wholegrain bread", "milk", "eggs"];
 
-const filter = (array, callback) => {
-    const shoppingList = [];
-    for (let i = 0; i < array.length; i++) {
-        if (callback(array[i], i)) {
-            shoppingList.push(array[i]);
-        }
-    }
-    return shoppingList;
+// const filter = (array, callback) => {
+//     const shoppingList = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if (callback(array[i], i)) {
+//             shoppingList.push(array[i]);
+//         }
+//     }
+//     return shoppingList;
+// }
+//
+// const callbackHowManyLetters = (element, index) => {
+//    return index >=2 && element.length > 4;
+// }
+//
+//
+// const result = filter(groceriesList, callbackHowManyLetters);
+// console.log(result);
+
+function filterGroc (array) {
+    return array.filter((item, index) => item.length === 4 );
 }
 
-const callbackHowManyLetters = (element, index) => {
-   return index >=2 && element.length > 4;
-}
-
-
-const result = filter(groceriesList, callbackHowManyLetters);
+const result = filterGroc(groceriesList);
 console.log(result);

@@ -39,3 +39,17 @@ const callbackDouble = (element, index) => {
 
 let result = map(numbers, callbackDouble);
 console.log(result);
+
+
+// const map = numbers.map ((item, index) => {
+//     if (item % 2 === 0) {
+//         return item * 2;
+//     } else {
+//         return item;
+//     }
+// });
+
+
+
+
+
