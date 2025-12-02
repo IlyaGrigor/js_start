@@ -9,6 +9,13 @@
 * truncate("Короткая строка", 20) // Ожидаемый результат: "Короткая строка"
 */
 
+const string = "learning Java Script is awesome but I feel stupid most of time"
+
 function truncate(str, maxLength) {
-  // your code
+    if (str.length > maxLength) {
+        return (str.slice(0, maxLength) + "...");
+    }
 }
+
+const result = truncate(string, 15);
+console.log(result);
