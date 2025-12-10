@@ -57,3 +57,5 @@ cancelButton.addEventListener('click', () => {
         isTimerStarted = false
     }
 })
+
+
