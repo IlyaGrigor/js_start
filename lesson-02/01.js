@@ -29,3 +29,7 @@ if ((isAdmin === true ||
 // console.log(isAccess)
 
 // your code
+
+// ПРИМЕР КИРИЛЛА :
+
+// let isAccess = ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) ? true : false;
