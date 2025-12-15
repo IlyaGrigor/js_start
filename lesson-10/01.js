@@ -34,6 +34,7 @@ const model = {
         const updatedMovies = this.movies.filter((el) => el.id !== id);
         this.movies = updatedMovies;
         view.renderMovies(this.movies)
+        view.displayMessage("Фильм успешно удалён!")
     }
 
 }
